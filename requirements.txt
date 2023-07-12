@@ -3,3 +3,4 @@ openai
 sentence_transformers
 numpy
 pandas
+requests
