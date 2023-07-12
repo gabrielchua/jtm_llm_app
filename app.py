@@ -2,6 +2,7 @@ import streamlit as st
 import openai
 import numpy as np
 import pandas as pd
+import requests
 
 from sentence_transformers import SentenceTransformer
 
@@ -10,6 +11,16 @@ st.title("Demo: Comparing JTM with JDs")
 #########################################
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
+hf_token = st.secrets["HF_API_KEY"]
+
+model_id = "sentence-transformers/all-mpnet-base-v2"
+hf_api_url = f"https://api-inference.huggingface.co/pipeline/feature-extraction/{model_id}"
+hf_header = {"Authorization": f"Bearer {hf_token}"}
+
+embedding_model = SentenceTransformer('paraphrase-albert-small-v2')
+
+
+#########################################
 
 def get_completion(prompt, model="gpt-3.5-turbo-16k"):
     messages = [{"role": "user", "content": prompt}]
@@ -39,7 +50,11 @@ def get_prompt(jtm_job, jtm):
             """
     return prompt
 
-embedding_model = SentenceTransformer('all-mpnet-base-v2')
+def get_HF_embedding(texts):
+    response = requests.post(hf_api_url, 
+                             headers=hf_header, 
+                             json={"inputs": texts, "options":{"wait_for_model":True}})
+    return response.json()
 
 if 'jtm_jd' not in st.session_state:
     st.session_state['jtm_jd'] = "Please click `Generate JD`"
@@ -195,6 +210,11 @@ skills and experience required
     jd3_score = 0
 
     if col1.button("Compare Against JTM"):
+
+        # jd1_embed = get_HF_embedding(jd1)
+        # jd2_embed = get_HF_embedding(jd2)
+        # jd3_embed = get_HF_embedding(jd3)
+        # jtm_embed = get_HF_embedding(jd3)
 
         jd1_embed = embedding_model.encode(jd1)
         jd2_embed = embedding_model.encode(jd2)
