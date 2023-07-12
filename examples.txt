@@ -35,7 +35,6 @@ Job Description: Branch Operations and Branch Teller (2030)
 Role: The Branch Operations and Branch Teller roles have evolved from primarily transactional tasks to ones that are driven by sales and advisory. The focus of these roles is to support a better customer experience for retail clients. The Branch Teller role will involve utilizing data analytics and automation to increase efficiency in resolving customer banking needs, particularly for tasks related to over the counter transactions, daily transaction calculations, and data entry. The Branch Operations role will involve identifying innovation and new product opportunities in the ATM space and driving the delivery of enhanced ATM functionality.
 
 Responsibilities:
-
     Provide excellent customer service and support a positive customer experience
     Conduct over the counter transactions and handle customer inquiries
     Utilize data analytics and automation technologies to efficiently resolve customer banking needs
@@ -47,7 +46,6 @@ Responsibilities:
     Assist customers in taking advantage of the bank's Smart ATM, Video Teller Machine, internet, and mobile banking services
 
 Skills Required:
-
     Digital savviness and familiarity with new digital service machines
     Customer-oriented mindset and emphasis on human attributes such as empathy and influencing
     Technical sales, product awareness, and advisory skills
@@ -57,12 +55,9 @@ Skills Required:
     User experience design knowledge
     Ability to refine policies and processes to align with business strategy
     
-    
-    
-    
-###############################
-    Branch sites:
 
+###############################
+Branch sites:
     Attend to walk-in customers
     Handle over-the-counter transactions in an efficient and accurate manner (including cash deposits and withdrawals)
     Assist in customers’ enquiries and ensure DBS service delivery standards are met in achieving total customer satisfaction
@@ -75,7 +70,6 @@ Skills Required:
 
 
 Qualifications:
-
     Preferably Diploma or above.
     Candidate must be comfortable to meet customer
     Some customer facing, ideally related experience or any other (ex: Retail or Branch Banking)
@@ -85,7 +79,6 @@ Qualifications:
 
 ###########################
 Responsibilities:
-
     Able to handle over-the-counter transactions in an efficient and accurate manner.
     Assist in customers' enquiries and ensure the Company's service delivery standards are met in achieving total customer satisfaction.
     Prospect and introduce customers to the Bank's products and services.
@@ -94,13 +87,11 @@ Responsibilities:
     Manage customer negative impact and complaints.
 
 Operations & Financial
-
     Perform all banking activities in accordance with the Bank's regulatory requirement.
     Maintains customer confidence and protects bank operations by keeping information confidential.
     Contributes to self and team effort by accomplishing related results needed.
 
 Requirements:
-
     Diploma/Higher NITEC/Degree in Banking/Finance or any similar industry
     Highly adaptable and ability to deal with ambiguity.
     Experience in delivering customer journeys, and digital features
