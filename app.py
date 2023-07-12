@@ -53,7 +53,9 @@ with tab1:
 
 ### Assumed Problem Statement 🔍
 
-How might we measure the quality of jobs and programmes relative to the [Job Transform Maps (JTMs)] (https://www.wsg.gov.sg/home/employers-industry-partners/jobs-transformation-maps) in order to identify and promote quality jobs for Singaporeans?
+How might we measure the quality of jobs and programmes relative to the Job Transform Maps (JTMs) in order to identify and promote quality jobs for Singaporeans?
+
+JTMs: https://www.wsg.gov.sg/home/employers-industry-partners/jobs-transformation-maps
 
 ### General Approach 🧭
 
