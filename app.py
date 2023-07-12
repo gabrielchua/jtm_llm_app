@@ -39,10 +39,10 @@ def get_prompt(jtm_job, jtm):
             """
     return prompt
 
-embedding_model = SentenceTransformer('paraphrase-albert-small-v2')
+embedding_model = SentenceTransformer('all-mpnet-base-v2')
 
 if 'jtm_jd' not in st.session_state:
-    st.session_state['jtm_jd'] = "NIL"
+    st.session_state['jtm_jd'] = "Please click `Generate JD`"
 
 #########################################
 
@@ -206,7 +206,7 @@ skills and experience required
     df = pd.DataFrame([["JD 1", "JD 2", "JD 3"],
                        [jd1_score, jd2_score, jd3_score]]).transpose()
         
-    df.columns = ["JD", "Similarity Score"]
+    df.columns = ["JD", "Similarity"]
         
     col2.dataframe(df)       
  
