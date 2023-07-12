@@ -42,9 +42,12 @@ if 'jtm_jd' not in st.session_state:
 
 #########################################
 
-tab1, tab2 = st.tabs(["Part 1: JTM", "Part 2: JDs"])
+tab1, tab2, tab3 = st.tabs(["Intro", "Part 1: JTM", "Part 2: JDs"])
 
 with tab1:
+    st.write("insert problem statement and application of this approach")
+
+with tab2:
     jtm_job = st.text_input(label="Name of Job")
     jtm = st.text_area(label="Enter the JTM extract")
 
@@ -53,7 +56,7 @@ with tab1:
         st.session_state.jtm_jd = get_completion(prompt)
         st.info(st.session_state.jtm_jd)
 
-with tab2:
+with tab3:
 
     col1, col2 = st.columns([0.6, 0.4])
 
