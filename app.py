@@ -221,9 +221,11 @@ skills and experience required
         jd3_embed = embedding_model.encode(jd3)
         jtm_embed = embedding_model.encode(jd3)
         
-        jd1_score = np.dot(jtm_embed, jd1_embed).round(1)
-        jd2_score = np.dot(jtm_embed, jd2_embed).round(1)
-        jd3_score = np.dot(jtm_embed, jd3_embed).round(1)
+
+        jd_max = np.dot(jtm_embed, jtm_embed).round(1)
+        jd1_score = np.round(np.dot(jtm_embed, jd1_embed) / jd_max, 2)
+        jd2_score = np.round(np.dot(jtm_embed, jd2_embed) / jd_max, 2)
+        jd3_score = np.round(np.dot(jtm_embed, jd3_embed) / jd_max, 2)
 
     df = pd.DataFrame([["JD 1", "JD 2", "JD 3"],
                        [jd1_score, jd2_score, jd3_score]]).transpose()
